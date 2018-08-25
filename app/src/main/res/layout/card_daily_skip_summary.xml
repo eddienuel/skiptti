@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fithooks_dirty_light"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:weightSum="2"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ProgressBar
+                    android:id="@+id/performance_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_gravity="center"
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"
+                    android:indeterminate="false"
+                    android:progress="70"
+                    android:max="100"
+                    android:progressDrawable="@drawable/flat_progress_ring" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_time_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fithooks_light_gray"
+                    android:textSize="16sp"
+                    fontPath="fonts/Roboto-Thin.ttf"
+                    android:text="@string/text_time_line"/>
+                <TextView
+                    android:id="@+id/skip_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    fontPath="fonts/Roboto-Light.ttf"
+                    android:layout_gravity="center"
+                    android:textSize="45sp"
+                    android:text="@string/text_sample_count"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fithooks_light_gray"
+                    android:textSize="20sp"
+                    fontPath="fonts/Roboto-Thin.ttf"
+                    android:text="@string/text_kpi_skips"/>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

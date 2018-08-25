@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <org.sufficientlysecure.htmltextview.HtmlTextView
+            android:id="@+id/splash_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/alpha_black_150"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:text="@string/text_pre_login_message"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

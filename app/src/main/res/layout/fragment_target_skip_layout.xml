@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/count_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <com.skiptti.app.control.ColorArcProgressBar
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:visibility="visible"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/skip_count"
+            app:is_need_content="true"
+            app:front_color1="@color/lemon_green"
+            app:front_color2="@color/lemon_green"
+            app:front_color3="@color/pale_green"
+            app:max_value="100"
+            app:back_width="2dp"
+            app:front_width="10dp"
+            app:total_angle="270"
+            app:is_need_unit="true"
+            app:string_unit="counts"
+            app:is_need_title="true"
+            app:string_title="Skips"
+            app:back_color="@android:color/white"
+            />
+
+        <LinearLayout
+            android:id="@+id/sign_in_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_kpi_background"
+            android:orientation="horizontal"
+            android:minWidth="150dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:padding="15dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="15dp"
+                android:background="@color/transparent"
+                android:contentDescription="@string/description_create_user"
+                android:src="@mipmap/ic_skip_target"
+                android:tint="@color/lemon_green" />
+
+            <TextView
+                android:id="@+id/target_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/text_target_sample_value"
+                fontPath="fonts/Roboto-Light.ttf"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/count_parent"
+        android:id="@+id/rpm_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="2dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/transparent"
+            android:contentDescription="@string/description_create_user"
+            android:src="@mipmap/ic_speed_meter"
+            android:tint="@color/pale_green" />
+
+        <TextView
+            android:id="@+id/rpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            fontPath="fonts/Roboto-Light.ttf"
+            android:text="@string/text_rpm_sample"
+            android:textColor="@android:color/white"
+            android:textSize="45sp"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:id="@+id/rpm_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/text_rpm_sample_unit"
+            android:textColor="@android:color/white"
+            fontPath="fonts/Roboto-Thin.ttf"
+            android:textSize="20sp"
+            tools:ignore="MissingPrefix" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

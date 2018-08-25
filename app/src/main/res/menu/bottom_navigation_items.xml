@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MenuTitle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_home"
+        android:icon="@drawable/ic_home_black_24dp" />
+    <item
+        android:id="@+id/item_skip"
+        android:icon="@drawable/ic_jumping_rope"/>
+    <item
+        android:id="@+id/item_friends"
+        android:icon="@drawable/ic_friends"/>
+    <item
+        android:id="@+id/item_more"
+        android:icon="@drawable/ic_more_black_24dp"/>
+</menu>

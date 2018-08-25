@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="item_click_support" type="id" />
+    <item name="demographic_submit_next_action" type="id" />
+    <item name="submit_continue_action" type="id" />
+
+    <item name="any" type="id" />
+    <item name="back" type="id" />
+    <item name="front" type="id" />
+
+    <item name="re_enrollment_fragment_id" type="id" />
+</resources>

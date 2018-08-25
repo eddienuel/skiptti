@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4400aa</color>
+    <color name="colorPrimaryDark">#4200a6</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="dirty">#81d7bf</color>
+    <color name="honey_flower">#674172</color>
+    <color name="studio">#8E44AD</color>
+    <color name="wisteria">#9B59B6</color>
+    <color name="dark">#d2d2d2</color>
+    <color name="transparent">#00d2d200</color>
+    <color name="alpha_black_150">#af000000</color>
+    <color name="alpha_blue_195">#c30b1a38</color>
+    <color name="alpha_dark_blue_195">#d90b3c49</color>
+    <color name="gray">#212121</color>
+    <color name="light_gray">#b1b1b1</color>
+    <color name="pale_green">#099138</color>
+    <color name="lemon_green">#64dd17</color>
+    <color name="light_pale_green">#4a8c61</color>
+    <color name="white">#ffffff</color>
+    <color name="sky_blue">#546dff</color>
+    <color name="cornflower_blue">#1976d2</color>
+    <color name="dark_blue">#0B3C49</color>
+
+    <color name="fithooks_blue_dark">#163979</color>
+    <color name="skiptti_blue_dark_translucent">#ca000000</color>
+    <color name="fithooks_blue">#2c5aa0</color>
+    <color name="fithooks_green">#00d455</color>
+    <color name="fithooks_gray">#545454</color>
+    <color name="fithooks_light_gray">#949494</color>
+    <color name="fithooks_light_progress_gray">#e2e2e2</color>
+    <color name="fithooks_dirty_light">#f1f1f1</color>
+
+</resources>
